@@ -23,10 +23,10 @@ export const SOCIAL_LINKS = [
 export const APP_CONTENT = {
   contact: {
     phone: '+966 53 287 5558',
-    email: 'info@daralofooq.com',
+    email: 'mk@dofoq.sa',
     location: {
-      en: 'Riyadh, Saudi Arabia | Kingdom Tower, Floor 45',
-      ar: 'الرياض، المملكة العربية السعودية | برج المملكة، الطابق 45'
+      en: 'Riyadh - Al-Kharj, Al-Salam District, Abu Bakr Al-Siddiq Road',
+      ar: 'الرياض - الخرج حي السلام طريق ابي بكر الصديق'
     }
   },
   hero: {
@@ -153,19 +153,19 @@ export const APP_CONTENT = {
   },
   team: [
     { 
-      name: { en: 'Ahmed Mansour', ar: 'أحمد منصور' },
+      name: { en: 'Malak Alomairah', ar: 'ملاك العميرة' },
       role: { en: 'CEO', ar: 'الرئيس التنفيذي' }, 
-      img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&q=80&w=400' // Saudi CEO representative
+      img: 'https://i.ibb.co/gLJ8BH6N/Malak.png'
     },
     { 
       name: { en: 'Sarah Ahmed', ar: 'سارة أحمد' },
       role: { en: 'Program Director', ar: 'مديرة البرامج' }, 
-      img: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=400' // Sarah representative
+      img: 'https://i.ibb.co/bgXb9mbb/sarah.png'
     },
     { 
       name: { en: 'Khalid Abdullah', ar: 'خالد عبدالله' },
       role: { en: 'IT Manager', ar: 'مدير تقنية المعلومات' }, 
-      img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400' // IT Manager in black shirt representative
+      img: 'https://i.ibb.co/JjCRKnkY/abdullah.png'
     }
   ],
   testimonials: [
