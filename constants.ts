@@ -82,14 +82,20 @@ export const APP_CONTENT = {
     {
       id: 'restructuring',
       icon: 'Layers',
-      title: { en: 'Restructuring & Org Dev', ar: 'إعادة الهيكلة والتطوير التنظيمي' },
+      title: { en: 'Organizational Restructuring and Organizational Development (Development Package)', ar: 'إعادة الهيكلة التنظيمية والتطوير التنظيمي ( باقة التطوير)' },
       desc: { 
-        en: 'Designing organizational structures aligned with market requirements.', 
-        ar: 'إعادة الهيكلة التنظيمية وتطوير الموارد البشرية بما يتناسب مع الأهداف.' 
+        en: 'In the Development Package, we ensure sustainable efficiency and high performance, including:', 
+        ar: 'نقدم لك في باقة التطوير ضمان الكفاءة المستدامة والأداء العالي والتي تشمل :' 
       },
       points: {
-        en: ['Job descriptions and policy design', 'Wage and reward structures', 'Training needs analysis'],
-        ar: ['تصميم الهياكل وبطاقات الوصف الوظيفي والسياسات', 'تصميم هيكل الأجور والمكافآت', 'تحليل الاحتياجات التدريبية وتقييم الأداء']
+        en: [
+          'Organizational Restructuring: Arranging the organizational structure – Defining departments, responsibilities, and authorities – Clarifying reporting lines and decision-making',
+          'Organizational Development: Attraction and recruitment - Preparation of job descriptions – Performance evaluation – Job evaluation and salary scales – Policies and procedures – Developing work teams and continuous improvement follow-up'
+        ],
+        ar: [
+          'إعادة الهيكلة التنظيمية: ترتيب الهيكل التنظيمي – تحديد الأقسام والمسؤوليات والصلاحيات – توضيح خطوط التقارير واتخاذ القرار',
+          'التطوير التنظيمي: الاستقطاب والتوظيف - أعداد الأوصاف الوظيفية – تقييم الأداء – تقييم الوظائف وسلم الرواتب – السياسات والإجراءات– تطوير فرق العمل ومتابعة التحسينات بشكل مستمر'
+        ]
       }
     },
     {
