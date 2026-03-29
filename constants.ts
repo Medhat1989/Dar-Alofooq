@@ -102,14 +102,20 @@ export const APP_CONTENT = {
     {
       id: 'hr_outsourcing',
       icon: 'Users2',
-      title: { en: 'HR Operations Outsourcing', ar: 'إسناد عمليات الموارد البشرية' },
+      title: { en: 'Daily HR Operations Management (Outsourcing Package)', ar: 'إدارة العمليات اليومية للموارد البشرية ( باقة الاسناد)' },
       desc: { 
-        en: 'Full management of government relations, payroll, and employee benefits.', 
-        ar: 'إدارة شاملة للعلاقات الحكومية وشؤون الموظفين والأجور.' 
+        en: 'In the Outsourcing Package, we provide you with seamless organization and follow-up of core HR operations without the need for internal hiring, including:', 
+        ar: 'نقدم لك في باقة الأسناد تنظيم ومتابعة العمليات الأساسية للموارد البشرية بسلاسة دون الحاجة لتوظيف داخلي والتي تشمل :' 
       },
       points: {
-        en: ['Government portal management (Muqeem, Qiwa, etc.)', 'Employee benefits and payroll protection', 'Self-service systems implementation'],
-        ar: ['إدارة منصات (مقيم، قوى، التأمينات، إلخ)', 'إدارة الأجور وحماية الأجور والمكافآت', 'نظام الخدمة الذاتية لإدارة شؤون الموظفين']
+        en: [
+          'Specialized follow-up for your government platforms: Madad – Qiwa – Ministry of Human Resources – Social Insurance – Muqeem or Absher Business – Medical Insurance – Government Support Programs – or any other platform related to the facility.',
+          'Specialized follow-up for your employee affairs: Full recruitment procedures – Employee file management – Attendance and departure – Employee leaves – Payroll management – Resignations and service terminations – Employee requirements.'
+        ],
+        ar: [
+          'متابعة موظف متخصص لدينا للمنصات الحكومية الخاصة بكم من: مدد – قوى – وزارة الموارد البشرية – التأمينات الاجتماعية – مقيم أو ابشر اعمال – متابعة التأمين الطبي – متابعة برامج الدعم الحكومي – أو أي منصة أخرى تخص المنشأة',
+          'متابعة موظف متخصص لدينا لشؤون الموظفين لديكم: إجراءات التعيين كامله – إدارة ملفات الموظفين – الحضور والانصراف – اجازات الموظفين – إدارة الرواتب – إدارة الاستقالات وانهاء الخدمات – متطلبات الموظفين'
+        ]
       }
     },
     {
