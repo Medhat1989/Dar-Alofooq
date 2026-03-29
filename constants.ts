@@ -50,14 +50,20 @@ export const APP_CONTENT = {
     {
       id: 'strategic',
       icon: 'Target',
-      title: { en: 'Strategic Planning', ar: 'التخطيط الاستراتيجي' },
+      title: { en: 'Strategic Planning and Strategy Restructuring (Strategy Package)', ar: 'التخطيط الاستراتيجي وإعادة هيكلة الاستراتيجية( باقة الاستراتيجية)' },
       desc: { 
-        en: 'Setting a clear vision and strategic roadmaps for long-term excellence.', 
-        ar: 'وضع رؤية واضحة وخطط مدروسة تضمن تحقيق الأهداف على المدى القصير والطويل.' 
+        en: 'In the Strategy Package, we ensure the achievement of goals with efficiency and flexibility, including:', 
+        ar: 'نقدم لك في باقة الاستراتيجية ضمان تحقيق الأهداف بكفاءة ومرونة والتي تشمل :' 
       },
       points: {
-        en: ['Short and long-term goal alignment', 'Market analysis and opportunity assessment', 'Competitive edge strategy design'],
-        ar: ['المساعدة على وضع رؤية واضحة وخطط مدروسة', 'تحليل السوق وتقييم الفرص والتحديات', 'تصميم خارطة استراتيجية للمنافسة والتفوق']
+        en: [
+          'Strategic Planning: Strategic Analysis – Strategy Building – Strategy Translation and Communication – Performance Monitoring – Preparation of Implementation Plans',
+          'Strategic Restructuring: Review and modification of the strategy according to changes'
+        ],
+        ar: [
+          'التخطيط الاستراتيجي: التحليل الاستراتيجي – بناء الاستراتيجية– ترجمة وتعميم الاستراتيجية – متابعة الاداء – اعداد خطط التنفيذ',
+          'إعادة الهيكلة الاستراتيجية: مراجعة وتعديل الاستراتيجية حسب التغيرات'
+        ]
       }
     },
     {
