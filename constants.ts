@@ -140,14 +140,20 @@ export const APP_CONTENT = {
     {
       id: 'recruitment',
       icon: 'Search',
-      title: { en: 'Recruitment & Talent', ar: 'التوظيف' },
+      title: { en: 'Employee Operation and Management (Operation Package)', ar: 'تشغيل وإدارة الموظفين( باقة التشغيل)' },
       desc: { 
-        en: 'Modern talent acquisition solutions for building strong teams.', 
-        ar: 'توفير حلول جذب واختيار الكفاءات عبر منهجيات حديثة.' 
+        en: 'In the Operation Package, we provide recruitment, management, supervision, and full follow-up to ensure workflow continuity without administrative burden on you, including:', 
+        ar: 'نقدم لك في باقة التشغيل من التوظيف والإدارة والاشراف والمتابعة الكاملة لضمان سير العمل واستمراريته بدون عبء إداري عليك والتي تشمل :' 
       },
       points: {
-        en: ['Talent attraction solutions', 'Certified assessment testing', 'Team-building methodologies'],
-        ar: ['حلول جذب واختيار الكفاءات', 'منهجيات توظيف حديثة', 'اختبارات معتمدة لبناء فريق قوي']
+        en: [
+          'Providing qualified employees according to your needs (administrative / operational / support)',
+          'Full management and supervision – Attendance and departure monitoring – Periodic performance evaluation – Employee replacement when needed'
+        ],
+        ar: [
+          'توفير موظفين مؤهلين حسب احتياجكم ( اداري / تشغيلي / دعم )',
+          'إدارة وإشراف كامل – متابعة الحضور والانصراف – تقييم الأداء لهم بشكل دوري – استبدال الموظفين عند الحاجة'
+        ]
       }
     }
   ],
