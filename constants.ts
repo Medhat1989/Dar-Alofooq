@@ -67,19 +67,6 @@ export const APP_CONTENT = {
       }
     },
     {
-      id: 'feasibility',
-      icon: 'BarChart3',
-      title: { en: 'Feasibility Studies', ar: 'دراسات الجدوى' },
-      desc: { 
-        en: 'Evaluating technical and economic project viability with accurate reports.', 
-        ar: 'توفير تحليل مفصل للمشاريع لتقييم الجدوى الاقتصادية والفنية.' 
-      },
-      points: {
-        en: ['Economic and technical analysis', 'Risk avoidance reporting', 'Informed decision-making support'],
-        ar: ['تحليل مفصل لتقييم الجدوى الاقتصادية والفنية', 'تقديم تقارير دقيقة لاتخاذ قرارات مستنيرة', 'تجنب المخاطر المحتملة']
-      }
-    },
-    {
       id: 'restructuring',
       icon: 'Layers',
       title: { en: 'Organizational Restructuring and Organizational Development (Development Package)', ar: 'إعادة الهيكلة التنظيمية والتطوير التنظيمي ( باقة التطوير)' },
@@ -99,19 +86,6 @@ export const APP_CONTENT = {
       }
     },
     {
-      id: 'incorporation',
-      icon: 'Briefcase',
-      title: { en: 'Incorporation Services', ar: 'خدمة التأسيس' },
-      desc: { 
-        en: 'Comprehensive support for legal registration and licensing.', 
-        ar: 'خدمات شاملة تشمل اختيار الشكل القانوني وتراخيص العمل.' 
-      },
-      points: {
-        en: ['Legal form selection', 'Official documentation registration', 'Necessary licensing acquisition'],
-        ar: ['اختيار الشكل القانوني', 'تسجيل الأوراق الرسمية', 'الحصول على التراخيص اللازمة']
-      }
-    },
-    {
       id: 'hr_outsourcing',
       icon: 'Users2',
       title: { en: 'Daily HR Operations Management (Outsourcing Package)', ar: 'إدارة العمليات اليومية للموارد البشرية ( باقة الاسناد)' },
@@ -128,19 +102,6 @@ export const APP_CONTENT = {
           'متابعة موظف متخصص لدينا للمنصات الحكومية الخاصة بكم من: مدد – قوى – وزارة الموارد البشرية – التأمينات الاجتماعية – مقيم أو ابشر اعمال – متابعة التأمين الطبي – متابعة برامج الدعم الحكومي – أو أي منصة أخرى تخص المنشأة',
           'متابعة موظف متخصص لدينا لشؤون الموظفين لديكم: إجراءات التعيين كامله – إدارة ملفات الموظفين – الحضور والانصراف – اجازات الموظفين – إدارة الرواتب – إدارة الاستقالات وانهاء الخدمات – متطلبات الموظفين'
         ]
-      }
-    },
-    {
-      id: 'hr_consulting',
-      icon: 'MessageSquare',
-      title: { en: 'HR Consulting', ar: 'استشارات عمليات الموارد البشرية' },
-      desc: { 
-        en: 'Professional guidance on government compliance and employee follow-ups.', 
-        ar: 'توجيه الموظفين القائمين على العمل وتغطية الجوانب الحكومية.' 
-      },
-      points: {
-        en: ['Compliance guidance', 'Employee inquiry handling', 'Operational follow-up mechanisms'],
-        ar: ['توجيه الموظفين القائمين على العمل', 'تغطية الجوانب الحكومية', 'آليات متابعة شؤون الموظفين']
       }
     },
     {
