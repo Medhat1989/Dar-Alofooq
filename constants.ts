@@ -4,6 +4,7 @@ import { NavItem } from './types';
 export const NAV_ITEMS: NavItem[] = [
   { id: 'home', label: { en: 'Home', ar: 'الرئيسية' } },
   { id: 'services', label: { en: 'Our Services', ar: 'خدمتنا' } },
+  { id: 'products', label: { en: 'Our Products', ar: 'منتجاتنا' } },
   { id: 'who-we-are', label: { en: 'Who We Are', ar: 'من نحن' } },
   { id: 'team', label: { en: 'Our Team', ar: 'فريقنا' } },
   { id: 'testimonials', label: { en: 'Testimonials', ar: 'آراء العملاء' } },
@@ -181,5 +182,25 @@ export const APP_CONTENT = {
       },
       img: 'https://picsum.photos/seed/t3/100/100'
     }
-  ]
+  ],
+  products: {
+    title: { en: 'Our Products', ar: 'منتجاتنا' },
+    items: [
+      {
+        id: 'org-structure-package',
+        name: { 
+          en: 'Dar Alofooq Professional Organizational Structure Analysis Methodology Package', 
+          ar: 'حزمة منهجية دار الأفق لتحليل الهيكل التنظيمي الاحترافية' 
+        },
+        images: [
+          'https://i.ibb.co/VcSVchdv/d1.jpg',
+          'https://i.ibb.co/QFSYm7DN/d2.jpg',
+          'https://i.ibb.co/jvjhvbXw/d3.jpg',
+          'https://i.ibb.co/dyd0PfD/d4.jpg',
+          'https://i.ibb.co/9kTCt844/d5.jpg'
+        ],
+        cta: { en: 'Order via WhatsApp', ar: 'اطلب عبر الواتساب' }
+      }
+    ]
+  }
 };

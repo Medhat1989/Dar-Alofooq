@@ -145,6 +145,80 @@ const ServiceIcon: React.FC<{ name: string, className?: string }> = ({ name, cla
   return <Icon className={className} />;
 };
 
+const ProductSlider: React.FC<{ product: any, lang: Language, glassStyle: string }> = ({ product, lang, glassStyle }) => {
+  const [current, setCurrent] = useState(0);
+  const isRtl = lang === 'ar';
+
+  const next = useCallback(() => {
+    setCurrent((prev) => (prev + 1) % product.images.length);
+  }, [product.images.length]);
+
+  const prev = useCallback(() => {
+    setCurrent((prev) => (prev - 1 + product.images.length) % product.images.length);
+  }, [product.images.length]);
+
+  useEffect(() => {
+    const timer = setInterval(next, 5000);
+    return () => clearInterval(timer);
+  }, [next]);
+
+  const whatsappUrl = `https://wa.me/966532875558?text=${encodeURIComponent(
+    lang === 'ar' 
+      ? `أرغب في طلب المنتج: ${product.name.ar}` 
+      : `I would like to order the product: ${product.name.en}`
+  )}`;
+
+  return (
+    <div className={`group relative rounded-[3rem] overflow-hidden ${glassStyle} border-white/20 transition-all duration-700 hover:shadow-blue-500/20 shadow-2xl`}>
+      <div className="relative aspect-[4/3] md:aspect-[16/9] overflow-hidden">
+        {product.images.map((img: string, idx: number) => (
+          <img
+            key={idx}
+            src={img}
+            alt={`${product.name[lang]} - ${idx + 1}`}
+            className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ${current === idx ? 'opacity-100 scale-100' : 'opacity-0 scale-110'}`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        
+        {/* Navigation Arrows */}
+        <div className="absolute inset-x-4 top-1/2 -translate-y-1/2 flex justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button onClick={prev} className="w-12 h-12 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center hover:bg-blue-600 transition-all">
+            {isRtl ? <ArrowRight size={24} /> : <ArrowLeft size={24} />}
+          </button>
+          <button onClick={next} className="w-12 h-12 rounded-full bg-black/50 backdrop-blur-md flex items-center justify-center hover:bg-blue-600 transition-all">
+            {isRtl ? <ArrowLeft size={24} /> : <ArrowRight size={24} />}
+          </button>
+        </div>
+
+        {/* Dots */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+          {product.images.map((_: any, idx: number) => (
+            <button
+              key={idx}
+              onClick={() => setCurrent(idx)}
+              className={`h-1.5 transition-all duration-500 rounded-full ${current === idx ? 'w-8 bg-blue-500' : 'w-2 bg-white/40 hover:bg-white/60'}`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="p-10 text-center">
+        <h3 className="text-2xl md:text-3xl font-black mb-8 leading-tight">{product.name[lang]}</h3>
+        <a 
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-4 bg-green-600 text-white px-10 py-5 rounded-2xl font-black text-xl hover:bg-green-700 hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all hover:scale-105 active:scale-95"
+        >
+          <MessageCircle size={24} />
+          {product.cta[lang]}
+        </a>
+      </div>
+    </div>
+  );
+};
+
 const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('ar');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -322,6 +396,31 @@ const App: React.FC = () => {
                   {(APP_CONTENT.services_detailed.indexOf(service) + 1).toString().padStart(2, '0')}
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section id="products" className="py-32 relative scroll-mt-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-24">
+            <div className="inline-block px-4 py-1 bg-white/5 border border-white/10 rounded-lg text-sm font-bold mb-6 uppercase tracking-[0.2em] text-blue-400">
+              {lang === 'ar' ? 'منتجاتنا الاستشارية' : 'Our Consulting Products'}
+            </div>
+            <h2 className="text-5xl md:text-7xl font-black mb-8">
+              {APP_CONTENT.products.title[lang]}
+            </h2>
+            <p className="text-xl text-white/50 max-w-2xl mx-auto">
+              {lang === 'ar' 
+                ? 'نقدم لك أدوات ومنهجيات احترافية لتمكين أعمالك.' 
+                : 'We provide you with professional tools and methodologies to empower your business.'}
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            {APP_CONTENT.products.items.map((product) => (
+              <ProductSlider key={product.id} product={product} lang={lang} glassStyle={glassStyle} />
             ))}
           </div>
         </div>
