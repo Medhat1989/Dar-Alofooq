@@ -204,16 +204,31 @@ const ProductSlider: React.FC<{ product: any, lang: Language, glassStyle: string
       </div>
 
       <div className="p-10 text-center">
-        <h3 className="text-2xl md:text-3xl font-black mb-8 leading-tight">{product.name[lang]}</h3>
-        <a 
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-4 bg-green-600 text-white px-10 py-5 rounded-2xl font-black text-xl hover:bg-green-700 hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all hover:scale-105 active:scale-95"
-        >
-          <MessageCircle size={24} />
-          {product.cta[lang]}
-        </a>
+        <h3 className="text-2xl md:text-3xl font-black mb-4 leading-tight">{product.name[lang]}</h3>
+        {product.description && (
+          <div className={`text-sm md:text-base text-white/60 mb-8 text-start whitespace-pre-wrap leading-relaxed max-w-2xl mx-auto ${isRtl ? 'text-right' : 'text-left'}`}>
+            {product.description[lang]}
+          </div>
+        )}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+          {product.price && (
+            <div className="flex flex-col items-center md:items-start">
+              <span className="text-xs font-black uppercase tracking-widest text-white/40 mb-1">
+                {lang === 'ar' ? 'السعر' : 'Price'}
+              </span>
+              <span className="text-2xl font-black text-blue-400">{product.price[lang]}</span>
+            </div>
+          )}
+          <a 
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-4 bg-green-600 text-white px-10 py-5 rounded-2xl font-black text-xl hover:bg-green-700 hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all hover:scale-105 active:scale-95"
+          >
+            <MessageCircle size={24} />
+            {product.cta[lang]}
+          </a>
+        </div>
       </div>
     </div>
   );

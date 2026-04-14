@@ -199,6 +199,89 @@ export const APP_CONTENT = {
           'https://i.ibb.co/dyd0PfD/d4.jpg',
           'https://i.ibb.co/9kTCt844/d5.jpg'
         ],
+        price: { en: '399 SAR', ar: '399 ريال سعودي' },
+        description: {
+          en: `An integrated consulting package that helps companies evaluate organizational structure, identify gaps, and improve the distribution of tasks and authorities. Includes a full analytical report (Word) and a professional presentation (PowerPoint) containing explanations, concepts, and an applied example.
+
+What does the package include?
+Word File – Official Report:
+• Organizational structure analysis
+• Gap analysis
+• Final recommendations
+• Analysis tools
+• Checklist
+• Risk indicators
+• Common mistakes
+• Scientific references
+• Structure map template
+
+PowerPoint File – Presentation:
+• Explanation of organizational structure
+• Definition of terms
+• Types of structures
+• Risks of poor structure
+• Global best practices
+• Performance indicators (KPIs)
+• Restructuring plan
+• Implementation follow-up template
+• Full applied example
+• User guide
+
+Target Audience:
+• SMEs
+• HR Managers
+• Consultants
+• Business Owners
+• Government Entities
+• Management Teams
+
+Additional Features:
+• Ready for immediate use
+• Fully editable
+• Suitable for meetings and presentations
+• Based on global methodologies
+• Professional and clear design`,
+          ar: `حزمة استشارية متكاملة تساعد الشركات على تقييم الهيكل التنظيمي، تحديد الفجوات، وتحسين توزيع المهام والصلاحيات. تشمل تقريرًا تحليليًا كاملًا (Word) وعرضًا توضيحيًا احترافيًا (PowerPoint) يحتوي على الشرح والمفاهيم والمثال التطبيقي.
+
+ماذا تشمل الحزمة؟
+ملف Word – التقرير الرسمي:
+• تحليل الهيكل التنظيمي
+• تحليل الفجوات
+• التوصيات النهائية
+• الأدوات المساعدة للتحليل
+• قائمة التحقق
+• مؤشرات الخطر
+• الأخطاء الشائعة
+• المراجع العلمية
+• نموذج خريطة الهيكل
+
+ملف PowerPoint – العرض التوضيحي:
+• شرح الهيكل التنظيمي
+• تعريف المصطلحات
+• أنواع الهياكل
+• مخاطر الهيكل السيئ
+• أفضل الممارسات العالمية
+• مؤشرات الأداء (KPIs)
+• خطة إعادة الهيكلة
+• نموذج متابعة التنفيذ
+• المثال التطبيقي الكامل
+• دليل الاستخدام
+
+الفئة المستهدفة:
+• الشركات الصغيرة والمتوسطة
+• مدراء الموارد البشرية
+• المستشارون
+• أصحاب الأعمال
+• الجهات الحكومية
+• الفرق الإدارية
+
+مميزات إضافية:
+• جاهز للاستخدام مباشرة
+• قابل للتعديل بالكامل
+• مناسب للاجتماعات والعروض
+• مبني على منهجيات عالمية
+• تصميم احترافي وواضح`
+        },
         cta: { en: 'Order via WhatsApp', ar: 'اطلب عبر الواتساب' }
       }
     ]
