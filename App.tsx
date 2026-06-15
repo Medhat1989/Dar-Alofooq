@@ -718,16 +718,24 @@ const App: React.FC = () => {
   );
 };
 
-const ContactInfo: React.FC<{ icon: any, title: string, value: string }> = ({ icon, title, value }) => (
-  <div className="flex items-start gap-6 group cursor-default">
-    <div className="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
-      {icon}
+const ContactInfo: React.FC<{ icon: any, title: string, value: string }> = ({ icon, title, value }) => {
+  const isLtr = value.startsWith('+') || value.includes('@') || /^[0-9\s-+()]+$/.test(value);
+  return (
+    <div className="flex items-start gap-6 group cursor-default">
+      <div className="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg">
+        {icon}
+      </div>
+      <div className="transition-all duration-500 group-hover:translate-x-2 rtl:group-hover:-translate-x-2">
+        <div className="text-[10px] font-black uppercase tracking-widest text-white/30 mb-1 group-hover:text-blue-400 transition-colors">{title}</div>
+        <div 
+          className={`text-xl font-bold group-hover:text-white transition-colors ${isLtr ? 'inline-block' : ''}`} 
+          dir={isLtr ? 'ltr' : undefined}
+        >
+          {value}
+        </div>
+      </div>
     </div>
-    <div className="transition-all duration-500 group-hover:translate-x-2">
-      <div className="text-[10px] font-black uppercase tracking-widest text-white/30 mb-1 group-hover:text-blue-400 transition-colors">{title}</div>
-      <div className="text-xl font-bold group-hover:text-white transition-colors">{value}</div>
-    </div>
-  </div>
-);
+  );
+};
 
 export default App;
