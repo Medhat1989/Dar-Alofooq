@@ -139,19 +139,19 @@ export const APP_CONTENT = {
   },
   team: [
     { 
-      name: { en: 'Malak Alomairah', ar: 'ملاك العميرة' },
+      name: { en: 'Dr. Malak Alomairah', ar: 'د. ملاك آل عميره' },
       role: { en: 'CEO', ar: 'الرئيس التنفيذي' }, 
-      img: 'https://i.ibb.co/gLJ8BH6N/Malak.png'
+      img: 'https://i.ibb.co/TDtbXbFF/Malak.jpg'
     },
     { 
-      name: { en: 'Sarah Ahmed', ar: 'سارة أحمد' },
-      role: { en: 'Program Director', ar: 'مديرة البرامج' }, 
-      img: 'https://i.ibb.co/bgXb9mbb/sarah.png'
+      name: { en: 'Shahd Al-Qahtani', ar: 'شهد القحطاني' },
+      role: { en: 'Chief Marketing Officer', ar: 'رئيس التسويق' }, 
+      img: 'https://i.ibb.co/9kNp7txT/shahd.jpg'
     },
     { 
-      name: { en: 'Khalid Abdullah', ar: 'خالد عبدالله' },
-      role: { en: 'IT Manager', ar: 'مدير تقنية المعلومات' }, 
-      img: 'https://i.ibb.co/JjCRKnkY/abdullah.png'
+      name: { en: 'Meshary Al-Sharif', ar: 'مشاري الشريف' },
+      role: { en: 'COO', ar: 'مدير التشغيل' }, 
+      img: 'https://i.ibb.co/5XQZr2T0/meshary.jpg'
     }
   ],
   testimonials: [

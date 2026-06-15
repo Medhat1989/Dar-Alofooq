@@ -469,7 +469,7 @@ const App: React.FC = () => {
               </div>
               <div className="relative group/image">
                 <div className="rounded-[2.5rem] overflow-hidden shadow-2xl transition-all duration-1000 group-hover/image:scale-[1.05] group-hover/image:rotate-1 border border-white/10">
-                  <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=1200" alt="Saudi Tech Leadership" className="w-full h-auto transition-all duration-1000 group-hover/image:scale-110" />
+                  <img src="https://i.ibb.co/nqJDWMhB/office.jpg" alt="Saudi Tech Leadership" className="w-full h-auto transition-all duration-1000 group-hover/image:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1B365D]/60 to-transparent opacity-60 transition-opacity duration-500 group-hover/image:opacity-30"></div>
                 </div>
                 <div className={`absolute -bottom-8 ${isRtl ? '-left-8' : '-right-8'} ${glassStyle} p-10 rounded-3xl hidden md:block z-10 animate-float transition-all duration-700 hover:scale-110 hover:shadow-blue-500/20`}>
